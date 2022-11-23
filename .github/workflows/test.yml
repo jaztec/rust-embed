@@ -33,6 +33,8 @@ jobs:
           cargo test --test lib
           cargo test --test lib --features "debug-embed"
           cargo test --test lib --features "compression" --release
+          cargo test --test metadata
+          cargo test --test metadata -- release
           cargo test --test interpolated_path --features "interpolate-folder-path"
           cargo test --test interpolated_path --features "interpolate-folder-path" --release
           cargo build --example basic
